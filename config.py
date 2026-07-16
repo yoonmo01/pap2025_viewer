@@ -2,8 +2,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field
 
 class Settings(BaseSettings):
-    # DB 연결 정보
-    DATABASE_URL: str = "postgresql+psycopg2://dbmasteruser:Hallym01%5E@ls-ec7b7415987c22ce317ca541f4744888bf08708c.cniw28i2sxpr.ap-northeast-2.rds.amazonaws.com:5432/gamsa_db"
+    # DB 연결 정보 (.env에서 자동 로드, 없으면 시작 시 에러)
+    DATABASE_URL: str
     
     # S3 관련 설정 (.env에서 자동 로드)
     aws_access_key_id: str = Field(alias="AWS_ACCESS_KEY_ID")
