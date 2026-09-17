@@ -68,3 +68,11 @@ alembic.ini
 
 .vscode-server/
 .ssh/
+/graphify-out
+
+# 셸 · 로컬 계정 흔적 (개인정보)
+.bash_history
+.gitconfig
+.lesshst
+.wget-hsts
+.tables
